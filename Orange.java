@@ -61,6 +61,7 @@ public class Orange {
 
 
     public static void main (String[] args){
+        //Test Daniel
         Orange o1 = new Orange();
         Orange o2 = new Orange();
         o2.setOrigine("britania");
@@ -69,5 +70,13 @@ public class Orange {
             System.out.println("Méthode equal ne marche pas");
         else
             System.out.println("Méthode equal marche");
+
+        //Test Yann
+        Orange o = new Orange(2, "tortueLand");
+        Orange oot = new Orange(1, "");
+        Orange oot2 = new Orange(-1, "Daniel's House");
+        System.out.println("orange 1 => " + o.getOrigine() + ":" + o.getPrix() + "euro");
+        System.out.println("orange 2 => " + oot.getOrigine() + ":" + oot.getPrix() + "euro");
+        System.out.println("orange 3 => " + oot2.getOrigine() + ":" + oot2.getPrix() + "euro");
    }
 }
